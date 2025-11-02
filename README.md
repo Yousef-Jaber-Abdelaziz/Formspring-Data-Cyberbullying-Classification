@@ -5,17 +5,13 @@ The **Formspring Data Cyberbullying Classification** project aims to detect and 
 
 ---
 
-## 1️⃣ 📊 Dataset Description  
-
-## 2️⃣ 🏷️ Data Labeling  
-
-## 3️⃣ 🧹 Data Pre-processing  
-
-## 4️⃣ 🧠 Model Training  
-
-## 5️⃣ 📈 Results  
-
-## 6️⃣ 💻 Sample Outputs from Streamlit Deployment  
+## 🗂️ Project Agenda
+#### 1️⃣ 📊 Dataset Description  
+#### 2️⃣ 🏷️ Data Labeling  
+#### 3️⃣ 🧹 Data Pre-processing  
+#### 4️⃣ 🧠 Model Training  
+#### 5️⃣ 📈 Results  
+#### 6️⃣ 💻 Sample Outputs from Streamlit Deployment  
 
 
 ---
