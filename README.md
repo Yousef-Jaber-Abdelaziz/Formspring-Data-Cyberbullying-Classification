@@ -22,8 +22,39 @@ A **BERT-based model** was fine-tuned on the labeled dataset to achieve high acc
 #### 📈 Results  
 The model achieved strong accuracy and F1-score on the validation dataset, demonstrating robust performance in detecting cyberbullying content. Evaluation metrics confirm that the system generalizes well on unseen data.
 
-### 💻 Sample Outputs from Streamlit Deployment  
+#### 💻 Sample Outputs from Streamlit Deployment  
 The model was deployed using **Streamlit**, providing an easy-to-use interface where users can input text messages and instantly see whether they are classified as *cyberbullying* or *non-cyberbullying*.
 
 ---
  
+## 📊 Dataset Description: Formspring Cyberbullying Detection (Reynolds et al., 2011)
+
+#### 🧾 Overview  
+The **Formspring Cyberbullying Detection Dataset** is a benchmark dataset designed for research on online harassment and abusive language detection. It was collected from the now-defunct **Formspring.me** Q&A social platform during the **summer of 2010**.  
+The dataset includes **12,772 anonymous question-answer pairs**, each annotated by **three independent workers on Amazon Mechanical Turk** to determine whether the post contains cyberbullying content.
+
+| Statistic | Value |
+|------------|--------|
+| **Total Samples** | 12,772 |
+| **Total Tokens** | ~300,000 |
+| **Average Words per Post** | 23 (bullying) / 25 (non-bullying) |
+
+> ⚠️ **Note:** The dataset is highly imbalanced, with over **80% non-bullying samples**, reflecting the natural distribution of online conversations.
+
+---
+
+#### 📂 Data Fields  
+| Field | Description |
+|--------|-------------|
+| `Userid` | Identifier of the respondent |
+| `Asker` | Identifier of the question asker |
+| `Post` | Combined text of question and answer (markers removed during preprocessing) |
+| `Ans#` | Annotator binary response (*Yes/No*) for bullying – three responses per post |
+| `severity#` | Bullying intensity score ranging from **0–10** |
+| `bully#` | Words or phrases flagged as bullying indicators |
+
+---
+
+#### 🧠 Annotation Process  
+- A post is labeled as **bullying** if **at least one of the three annotators** agreed.  
+
