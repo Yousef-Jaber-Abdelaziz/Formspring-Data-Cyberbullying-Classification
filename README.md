@@ -42,7 +42,7 @@ The dataset includes **12,772 anonymous question-answer pairs**, each annotated 
 
 #### 🧠 Annotation Process  
 - A post is labeled as **bullying** if **at least one of the three annotators** agreed.
-- > 💡 **Tip:** If you’d like to explore the dataset before diving into the notebooks, click the button to view the raw data. [![View Dataset](https://img.shields.io/badge/View_Dataset-CSV-blue?style=for-the-badge&logo=github)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/main/dataset.csv)
+- > 💡 **Tip:** If you’d like to explore the dataset before diving into the notebooks, click the button to view the raw data. [![View Dataset](https://img.shields.io/badge/View_Dataset-CSV-blue?style=for-the-badge&logo=github)]([https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/main/dataset.csv](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/6d8041e46163d643e09f2fe1ac7cf856d067ce6d/Datasets/0-Root%20Data/formspring.csv))
 
 
 ---
