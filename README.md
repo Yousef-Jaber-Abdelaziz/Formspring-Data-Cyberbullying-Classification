@@ -16,7 +16,7 @@ The **Formspring Data Cyberbullying Classification** project aims to detect and 
 
 ---
  
-## 📊 Dataset Description: Formspring Cyberbullying Detection (Reynolds et al., 2011)
+## 1️⃣ 📊 Dataset Description: Formspring Cyberbullying Detection (Reynolds et al., 2011)
 
 #### 🧾 Overview  
 The **Formspring Cyberbullying Detection Dataset** is a benchmark dataset designed for research on online harassment and abusive language detection. It was collected from the now-defunct **Formspring.me** Q&A social platform during the **summer of 2010**.  
@@ -41,5 +41,11 @@ The dataset includes **12,772 anonymous question-answer pairs**, each annotated 
 | `bully#` | Words or phrases flagged as bullying indicators |
 
 #### 🧠 Annotation Process  
-- A post is labeled as **bullying** if **at least one of the three annotators** agreed.  
+- A post is labeled as **bullying** if **at least one of the three annotators** agreed.
+- > 💡 **Tip:** If you’d like to explore the dataset before diving into the notebooks, click the button to view the raw data. [![View Dataset](https://img.shields.io/badge/View_Dataset-CSV-blue?style=for-the-badge&logo=github)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/main/dataset.csv)
+
+
+---
+
+
 
