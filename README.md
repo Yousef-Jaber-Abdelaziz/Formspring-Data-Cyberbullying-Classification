@@ -7,12 +7,26 @@ The **Formspring Data Cyberbullying Classification** project aims to detect and 
 
 ## 📋 Project Agenda  
 
-#### 📊 Dataset Description  
-#### 🏷️ Data Labeling  
-#### 🧹 Data Pre-processing  
-#### 🧠 Model Training  
-#### 📈 Results  
-#### 💻 Sample Outputs from Streamlit Deployment  
+## 🗂️ Project Agenda
+
+1. #### 📊 Dataset Description  
+   Introduces the Formspring dataset used for cyberbullying detection, detailing its structure, source, and distribution of labeled samples.
+
+2. #### 🏷️ Data Labeling  
+   Explains how posts were annotated by multiple human reviewers, ensuring accurate classification of bullying versus non-bullying content.
+
+3. #### 🧹 Data Pre-processing  
+   Covers text cleaning, normalization, tokenization, and preparation steps to enhance model performance and data quality.
+
+4. #### 🧠 Model Training  
+   Describes the training process using classical ML models (Logistic Regression, SVM, Naïve Bayes) and the fine-tuned DistilBERT transformer for NLP.
+
+5. #### 📈 Results  
+   Summarizes model evaluation metrics, highlighting DistilBERT’s superior performance in detecting cyberbullying text accurately.
+
+6. #### 💻 Sample Outputs from Streamlit Deployment  
+   Demonstrates real-time text classification using a Streamlit app for interactive cyberbullying detection.
+
 
 ---
  
