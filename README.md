@@ -5,27 +5,17 @@ The **Formspring Data Cyberbullying Classification** project aims to detect and 
 
 ---
 
-## 📋 Project Agenda  
+## 1️⃣ 📊 Dataset Description  
 
-## 🗂️ Project Agenda
+## 2️⃣ 🏷️ Data Labeling  
 
-1. #### 📊 Dataset Description  
-   Introduces the Formspring dataset used for cyberbullying detection, detailing its structure, source, and distribution of labeled samples.
+## 3️⃣ 🧹 Data Pre-processing  
 
-2. #### 🏷️ Data Labeling  
-   Explains how posts were annotated by multiple human reviewers, ensuring accurate classification of bullying versus non-bullying content.
+## 4️⃣ 🧠 Model Training  
 
-3. #### 🧹 Data Pre-processing  
-   Covers text cleaning, normalization, tokenization, and preparation steps to enhance model performance and data quality.
+## 5️⃣ 📈 Results  
 
-4. #### 🧠 Model Training  
-   Describes the training process using classical ML models (Logistic Regression, SVM, Naïve Bayes) and the fine-tuned DistilBERT transformer for NLP.
-
-5. #### 📈 Results  
-   Summarizes model evaluation metrics, highlighting DistilBERT’s superior performance in detecting cyberbullying text accurately.
-
-6. #### 💻 Sample Outputs from Streamlit Deployment  
-   Demonstrates real-time text classification using a Streamlit app for interactive cyberbullying detection.
+## 6️⃣ 💻 Sample Outputs from Streamlit Deployment  
 
 
 ---
@@ -53,8 +43,6 @@ The dataset includes **12,772 anonymous question-answer pairs**, each annotated 
 | `Ans#` | Annotator binary response (*Yes/No*) for bullying – three responses per post |
 | `severity#` | Bullying intensity score ranging from **0–10** |
 | `bully#` | Words or phrases flagged as bullying indicators |
-
----
 
 #### 🧠 Annotation Process  
 - A post is labeled as **bullying** if **at least one of the three annotators** agreed.  
