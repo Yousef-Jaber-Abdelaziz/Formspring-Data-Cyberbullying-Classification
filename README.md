@@ -64,5 +64,5 @@ ELSE:
 
 > 🧭 **Quick Navigation:**  
 > [![Open Notebook](https://img.shields.io/badge/Open_Notebook-Jupyter-orange?style=for-the-badge&logo=jupyter)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/main/1-Cyber-bullying-Preprocessing.ipynb)  
-> [![View Datasets Folder](https://img.shields.io/badge/View_Datasets-Folder-blue?style=for-the-badge&logo=github)]([https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/tree/main/Datasets])
+> [![View Datasets Folder](https://img.shields.io/badge/View_Datasets-Folder-blue?style=for-the-badge&logo=github)]([https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/tree/main/Datasets/1-Data%20Class%20Splitting])
 
