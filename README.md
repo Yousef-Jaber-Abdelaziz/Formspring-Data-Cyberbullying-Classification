@@ -10,8 +10,7 @@ The **Formspring Data Cyberbullying Classification** project aims to detect and 
 #### 2️⃣ 🏷️ Data Labeling  
 #### 3️⃣ 🧹 Data Pre-processing  
 #### 4️⃣ 🧠 Model Training  
-#### 5️⃣ 📈 Results  
-#### 6️⃣ 💻 Sample Outputs from Streamlit Deployment  
+#### 5️⃣ 💻 Sample Outputs from Streamlit Deployment  
 
 
 ---
@@ -93,7 +92,7 @@ All preprocessing steps were implemented in the notebook **`1_Cyber-bullying-Pre
 
 ---
 
-## 3️⃣ 🧠 Model Training  
+## 4️⃣ 🧠 Model Training  
 
 The model development and training process was implemented in **`3-Cyber-bullying-Detection-Deployment.ipynb`**, focusing on robust text feature extraction, imbalance handling, and fine-tuning of the **DistilBERT** transformer model.
 
@@ -137,3 +136,22 @@ The model development and training process was implemented in **`3-Cyber-bullyin
 ---
 
 📓 Explore the model training and deployment notebook:  [![Jupyter](https://img.shields.io/badge/-Notebook-FFA500?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/1537616a75b9e4aeb5ebfdef687b9c3a0b5d15cb/Project%20Code/Notebooks/2-Cyber-bullying-Detection-Deployment.ipynb)
+
+---
+## 5️⃣ 💻 Sample Outputs from Streamlit Deployment  
+
+The cyberbullying detection system was **deployed manually using Streamlit**, providing an interactive web interface for real-time text classification.  
+Users can enter or paste any social media message, and the app instantly predicts whether the text is **“Bullying”** or **“Non-Bullying”** using the fine-tuned **DistilBERT model**.  
+
+The Streamlit app loads the trained model, tokenizes the input text, and displays both the **predicted label** and **confidence score** dynamically.  
+This deployment demonstrates the real-world usability of the model for monitoring online interactions and moderating user-generated content.
+
+
+### 🎥 Demo Samples  
+
+<div align="center">
+
+<img src="Deployment Samples/ezgif-54e215e6c03a33.gif" width="400" style="margin-right: 20px;"/>
+<img src="Deployment Samples/ezgif-5f9a84e8b4b048.gif" width="400"/>
+
+</div>
