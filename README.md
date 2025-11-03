@@ -155,3 +155,5 @@ This deployment demonstrates the real-world usability of the model for monitorin
 <img src="Deployment Samples/ezgif-5f9a84e8b4b048.gif" width="400"/>
 
 </div>
+
+📁 Explore all output samples here: [![Samples](https://img.shields.io/badge/-Project_Samples-4CAF50?style=flat-square&logo=files&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/tree/82a0afd65883f21dd07fbb797917702149883e45/Deployment%20Samples)
