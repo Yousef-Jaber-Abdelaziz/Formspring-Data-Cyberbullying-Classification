@@ -24,7 +24,7 @@ The dataset includes **12,772 anonymous question-answer pairs**, each annotated 
 
 | Statistic | Value |
 |------------|--------|
-| **Total Samples** | 12,772 |
+| **Total Samples** | 12,901 |
 | **Total Tokens** | ~300,000 |
 | **Average Words per Post** | 23 (bullying) / 25 (non-bullying) |
 
@@ -47,5 +47,17 @@ The dataset includes **12,772 anonymous question-answer pairs**, each annotated 
 
 ---
 
+## 2️⃣ 🏷️ Data Labeling  
+
+Each post in the dataset was annotated by three independent human evaluators, providing binary responses (*Yes/No*) and a **severity score** ranging from 0 to 10.  
+
+To ensure a clear distinction between bullying and non-bullying content, the following custom labeling rule was applied:
+
+```text
+IF any annotator assigned a severity > 0:
+    → Label = 1 (Cyberbullying)
+ELSE:
+    → Label = 0 (Non-bullying)
+```
 
 
