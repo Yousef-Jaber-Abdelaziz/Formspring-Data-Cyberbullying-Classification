@@ -88,6 +88,6 @@ All preprocessing steps were implemented in the notebook **`1_Cyber-bullying-Pre
 | **9. Export Processed Data** | Saved the final cleaned dataset as `all_data_processed.csv` containing: <br>• `post`: tokenized text <br>• `label`: 0 (non-bully) / 1 (bully). |
 
 📓 You can explore the preprocessing notebook here:  
-[![Notebook](https://img.shields.io/badge/Jupyter-Notebook-DAA520?style=flat-square&logo=jupyter&logoColor=white)](Project Code/Notebooks/1-cyber-bullying-preprocessing.ipynb)  
+[![Notebook](https://img.shields.io/badge/Jupyter-Notebook-DAA520?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/067e3ef191213c72fb8bba25d7d17db351839801/Project%20Code/Notebooks/1-cyber-bullying-preprocessing.ipynb)  
 📂 Or view the processed dataset here:  
 [![Dataset](https://img.shields.io/badge/Dataset-Processed_Data-4682B4?style=flat-square&logo=files&logoColor=white)](datasets/processed)
