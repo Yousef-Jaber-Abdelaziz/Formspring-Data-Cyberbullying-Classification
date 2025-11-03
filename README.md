@@ -66,3 +66,28 @@ ELSE:
 > 🧭 **Quick Navigation:**  
 > Navigate the notebook [![Jupyter](https://img.shields.io/badge/-Notebook-FFA500?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/44fca2ce81215e597b8495defec4c2903643bd45/Project%20Code/Notebooks/0_Cyber-bullying-Class-Split.ipynb)  
 > View the splitted data samples [![Dataset](https://img.shields.io/badge/-Datasets-4CAF50?style=flat-square&logo=files&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/tree/bcebbe1dbb37099a674dc9a3e59d648a32ff2f0b/Datasets/1-Data%20Class%20Splitting)
+
+
+---
+
+
+## 2️⃣ 🧹 Data Pre-processing  
+
+All preprocessing steps were implemented in the notebook **`1_Cyber-bullying-Preprocessing.ipynb`** to ensure clean, standardized text input for model training.  
+
+| Step | Description |
+|------|-------------|
+| **1. Data Loading & Merging** | Imported `bully_data.csv` (label=1) and `not_bully_data.csv` (label=0), then combined and shuffled the data for balanced sampling. |
+| **2. HTML, URL & Symbol Cleaning** | Applied `BeautifulSoup` and regular expressions to strip HTML tags, remove URLs, and retain only alphabetic characters and spaces. |
+| **3. Slang & Contraction Expansion** | Replaced slang terms (e.g., `"lol"`) and contractions (e.g., `"don’t"`) using custom JSON dictionaries: `slangs.json` and `contractions.json`. |
+| **4. Grammar & Spelling Correction (LLM-based)** | Used **Microsoft Phi-2** model for contextual text correction via the prompt: <br> `"Correct grammar and spelling: {text}"` <br> Truncated long inputs (>500 chars) and extracted corrected text. |
+| **5. Punctuation Removal** | Removed punctuation marks using `str.maketrans` to ensure uniform tokenization. |
+| **6. Named Entity Replacement** | Leveraged **spaCy** to anonymize named entities, e.g., `"John in New York"` → `"person in location"`. |
+| **7. Tokenization, Lemmatization & Stopword Removal** | Used **NLTK** to tokenize, POS-tag, and lemmatize text; removed standard English stopwords while preserving critical bullying terms such as `ass`, `bitch`, `fuck`, etc. |
+| **8. Final Cleaning** | Dropped empty or NaN entries and removed duplicate posts to ensure data consistency. |
+| **9. Export Processed Data** | Saved the final cleaned dataset as `all_data_processed.csv` containing: <br>• `post`: tokenized text <br>• `label`: 0 (non-bully) / 1 (bully). |
+
+📓 You can explore the preprocessing notebook here:  
+[![Notebook](https://img.shields.io/badge/Jupyter-Notebook-DAA520?style=flat-square&logo=jupyter&logoColor=white)](Project Code/Notebooks/1-cyber-bullying-preprocessing.ipynb)  
+📂 Or view the processed dataset here:  
+[![Dataset](https://img.shields.io/badge/Dataset-Processed_Data-4682B4?style=flat-square&logo=files&logoColor=white)](datasets/processed)
