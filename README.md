@@ -107,9 +107,8 @@ The model development and training process was implemented in **`3-Cyber-bullyin
 | **6. Optimization** | Used the **AdamW optimizer** with linear learning rate decay and early stopping based on validation loss. |
 | **7. Early Stopping & Best Model Selection** | Training stopped automatically when validation loss stopped improving for one epoch. The best model weights were restored for evaluation. |
 
----
 
-### 🧩 Training Summary
+#### 🧩 Training Summary
 
 | Metric | Value |
 |--------|-------|
@@ -123,7 +122,7 @@ The model development and training process was implemented in **`3-Cyber-bullyin
 
 ---
 
-### 📈 Validation Results (Optimized Threshold = 0.45)
+#### 📈 Validation Results (Optimized Threshold = 0.45)
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|------------|---------|-----------|----------|
@@ -137,5 +136,4 @@ The model development and training process was implemented in **`3-Cyber-bullyin
 
 ---
 
-📓 Explore the model training and deployment notebook:  
-[![Jupyter](https://img.shields.io/badge/-Notebook-FFA500?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/1537616a75b9e4aeb5ebfdef687b9c3a0b5d15cb/Project%20Code/Notebooks/2-Cyber-bullying-Detection-Deployment.ipynb)
+📓 Explore the model training and deployment notebook:  [![Jupyter](https://img.shields.io/badge/-Notebook-FFA500?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/1537616a75b9e4aeb5ebfdef687b9c3a0b5d15cb/Project%20Code/Notebooks/2-Cyber-bullying-Detection-Deployment.ipynb)
