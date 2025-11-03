@@ -63,6 +63,6 @@ ELSE:
 > This logic resulted in **1,915 samples** being annotated as **cyberbullying** based on the applied severity rule.  
 
 > 🧭 **Quick Navigation:**  
-> [![Open Notebook](https://img.shields.io/badge/Open_Notebook-Jupyter-orange?style=for-the-badge&logo=jupyter)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/main/1-Cyber-bullying-Preprocessing.ipynb)  
-> [![View Datasets Folder](https://img.shields.io/badge/View_Datasets-Folder-blue?style=for-the-badge&logo=github)]([https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/tree/main/Datasets/1-Data%20Class%20Splitting])
+> Navigate the notebook [![Jupyter](https://img.shields.io/badge/-Notebook-FFA500?style=flat-square&logo=jupyter&logoColor=white)](YOUR_NOTEBOOK_LINK)  
+> View the splitted data samples [![Dataset](https://img.shields.io/badge/-Datasets-4CAF50?style=flat-square&logo=files&logoColor=white)]([YOUR_DATASET_FOLDER_LINK](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/tree/bcebbe1dbb37099a674dc9a3e59d648a32ff2f0b/Datasets/1-Data%20Class%20Splitting))
 
