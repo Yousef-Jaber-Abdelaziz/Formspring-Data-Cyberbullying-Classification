@@ -71,7 +71,7 @@ ELSE:
 ---
 
 
-## 2️⃣ 🧹 Data Pre-processing  
+## 3️⃣ 🧹 Data Pre-processing  
 
 All preprocessing steps were implemented in the notebook **`1_Cyber-bullying-Preprocessing.ipynb`** to ensure clean, standardized text input for model training.  
 
@@ -89,3 +89,53 @@ All preprocessing steps were implemented in the notebook **`1_Cyber-bullying-Pre
 
 📓 You can explore the preprocessing notebook here: [![Jupyter](https://img.shields.io/badge/-Notebook-FFA500?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/067e3ef191213c72fb8bba25d7d17db351839801/Project%20Code/Notebooks/1-cyber-bullying-preprocessing.ipynb)  
 📂 View the processed dataset: [![Dataset](https://img.shields.io/badge/-Processed_Data-4CAF50?style=flat-square&logo=files&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/tree/412fdde768039cf7954eed59e21c2ed1dcde04d3/Datasets/2-PreProcessed%20Data)
+
+
+---
+
+## 3️⃣ 🧠 Model Training  
+
+The model development and training process was implemented in **`3-Cyber-bullying-Detection-Deployment.ipynb`**, focusing on robust text feature extraction, imbalance handling, and fine-tuning of the **DistilBERT** transformer model.
+
+| Step | Description |
+|------|-------------|
+| **1. Feature Extraction** | Leveraged the **DistilBERT tokenizer** from Hugging Face Transformers to convert cleaned text into contextual embeddings using the `distilbert-base-uncased` pre-trained model. Each text was truncated/padded to a fixed maximum sequence length for batch processing. |
+| **2. Dataset Splitting** | Divided data into **training (80%)**, **validation (10%)**, and **test (10%)** sets using stratified sampling to preserve class balance. |
+| **3. Handling Class Imbalance** | Used **class weighting** inside the loss function to penalize the majority (non-bullying) class more lightly. This ensured fair learning for minority samples (bullying). |
+| **4. Model Architecture** | Added a fully connected **dense classification head** on top of the frozen DistilBERT encoder to output a single probability for binary classification (bully / non-bully). |
+| **5. Loss Function** | Adopted **Weighted Binary Cross-Entropy Loss (BCEWithLogitsLoss)** — crucial for learning from highly imbalanced data and providing stable gradient updates. |
+| **6. Optimization** | Used the **AdamW optimizer** with linear learning rate decay and early stopping based on validation loss. |
+| **7. Early Stopping & Best Model Selection** | Training stopped automatically when validation loss stopped improving for one epoch. The best model weights were restored for evaluation. |
+
+---
+
+### 🧩 Training Summary
+
+| Metric | Value |
+|--------|-------|
+| **Model** | DistilBERT (`distilbert-base-uncased`) |
+| **Epochs** | 3/10 (early stopped) |
+| **Best Validation Loss** | 0.1413 |
+| **Optimizer** | AdamW |
+| **Loss Function** | Weighted Binary Cross-Entropy (BCEWithLogitsLoss) |
+| **Class Imbalance Handling** | Class Weights |
+| **Feature Extraction** | DistilBERT contextual embeddings |
+
+---
+
+### 📈 Validation Results (Optimized Threshold = 0.45)
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|------------|---------|-----------|----------|
+| **0 (Non-bullying)** | 0.733 | 0.709 | 0.721 | 151 |
+| **1 (Bullying)** | 0.718 | 0.742 | 0.730 | 151 |
+
+**Overall Accuracy:** 0.725  
+**Macro Avg F1:** 0.725  
+
+> ✅ The model achieved a **balanced F1-score of 0.73** on the bullying class — demonstrating effective handling of imbalance and high contextual understanding of text.
+
+---
+
+📓 Explore the model training and deployment notebook:  
+[![Jupyter](https://img.shields.io/badge/-Notebook-FFA500?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/Yousef-Jaber-Abdelaziz/Formspring-Data-Cyberbullying-Classification/blob/1537616a75b9e4aeb5ebfdef687b9c3a0b5d15cb/Project%20Code/Notebooks/2-Cyber-bullying-Detection-Deployment.ipynb)
